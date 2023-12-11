@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ubuntu:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./src:/src
+    working_dir: /src
+    tty: true
+    stdin_open: true
